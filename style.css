@@ -1,0 +1,577 @@
+/* General Page Setup */
+body {
+    background-color: #e2f4d9; /* The pale green background outer color */
+    /* If you want a repeating background pattern, uncomment the line below: */
+    /* background-image: url('your-star-pattern.gif'); */
+    background-repeat: repeat;
+    font-family: "Courier New", Courier, monospace; /* Classic retro monospace choice */
+    font-size: 13px;
+    color: #6d4c41; /* Dark brownish text instead of harsh black */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* The Frame holding the whole site */
+#container {
+    width: 900px;
+    background-color: #f7fff0; /* Brighter inner green/white */
+    border: 3px double #a3c9a8;
+    padding: 15px;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.05);
+}
+
+/* Header Banner Styling */
+.main-banner {
+    background-color: #ffdef2; /* Light pink background */
+    border: 2px dashed #ffb7b2;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+.main-banner h1 {
+    margin: 0;
+    font-size: 42px;
+    color: #a3c9a8;
+    text-shadow: 2px 2px 0px #fff;
+    letter-spacing: 2px;
+}
+
+/* Classic Box Styling Used Everywhere */
+.box-header {
+    background-color: #e2f4d9;
+    border: 1px solid #a3c9a8;
+    border-bottom: none;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+.box-content {
+    background-color: #ffffff;
+    border: 1px solid #a3c9a8;
+    padding: 10px;
+}
+
+/* The Three Column Layout Structure */
+.three-column-layout {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.column {
+    flex: 1; /* Makes them equal width initially */
+}
+.content-center {
+    flex: 1.5; /* Makes the center welcome area slightly wider */
+}
+
+/* Left Sidebar Styles */
+.avatar-placeholder img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+.profile-info p {
+    margin: 4px 0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Center Content Styles */
+.dashed-line {
+    border: none;
+    border-top: 1px dashed #a3c9a8;
+    margin: 15px 0;
+}
+.visitor-counter {
+    text-align: center;
+    font-size: 12px;
+}
+.visitor-counter span {
+    background: #ffdef2;
+    padding: 2px 6px;
+    border: 1px solid #ffb7b2;
+    font-weight: bold;
+}
+.mobile-notice {
+    font-size: 11px;
+    text-align: center;
+    border: 1px dashed #ffb7b2 !important;
+    background-color: #fff5f7;
+}
+
+/* Right Sidebar Navigation Buttons */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+.nav-links a {
+    display: block;
+    background-color: #e2f4d9;
+    border: 1px solid #a3c9a8;
+    padding: 8px;
+    color: #6d4c41;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.nav-links a:hover {
+    background-color: #ffdef2;
+    border-color: #ffb7b2;
+}
+
+/* Stamps Row */
+.stamps-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.stamps-row img {
+    border: 1px solid #a3c9a8;
+}
+
+/* Bottom Grid Layout */
+.bottom-grid {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.grid-box {
+    flex: 1;
+}
+.img-box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #a3c9a8;
+    display: block;
+}
+
+/* Mock Chatbox styling */
+.mock-chat {
+    height: 100px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    padding: 5px;
+    font-size: 11px;
+    background: #fafafa;
+}
+.mock-chat p { margin: 3px 0; }
+
+/* Virtual Pet Styling */
+.pet-actions button {
+    font-family: monospace;
+    font-size: 11px;
+    background: #fff;
+    border: 1px solid #a3c9a8;
+    cursor: pointer;
+    margin: 2px;
+    padding: 2px 5px;
+}
+.pet-actions button:hover {
+    background: #ffdef2;
+}
+
+/* Footer Section */
+footer {
+    border-top: 1px solid #a3c9a8;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 11px;
+}
+footer a {
+    color: #6d4c41;
+}
+
+/* --- 404 Page Specific Styles --- */
+.error-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.error-layout h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+/* --- Gallery Page Specific Grid Styles --- */
+.text-center {
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Forms exactly 3 clean columns */
+    gap: 15px;
+    padding: 10px 5px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Image containment boxes matching your reference image */
+.grid-item .img-wrap {
+    background-color: #ffffff;
+    border: 1px solid #a3c9a8;
+    padding: 6px;
+    display: inline-block;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.02);
+}
+
+.grid-item img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover; /* Keeps image squares clean without squishing */
+    display: block;
+}
+
+.grid-item p {
+    font-size: 11px;
+    line-height: 1.3;
+    margin: 6px 0 0 0;
+    color: #6d4c41;
+}
+
+.heart {
+    color: #ffb7b2;
+}
+
+/* Status Ticker Accent Text block */
+.status-ticker {
+    background-color: #ffffff;
+    border: 1px dashed #a3c9a8;
+    padding: 6px;
+}
+
+/* Center Bottom Text Link Navbar CSS */
+.flat-navbar {
+    background-color: #ffffff;
+    border: 1px dashed #a3c9a8;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: 12px;
+    max-width: 80%;
+}
+
+.flat-navbar a {
+    color: #6d4c41;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.flat-navbar a:hover {
+    color: #ffb7b2;
+    text-decoration: underline;
+}
+
+/* Minor Pet Widget updates for button grids */
+.pet-widget {
+    background-color: #fff5f7 !important;
+    border-color: #ffb7b2 !important;
+}
+
+/* --- About & Contact Page Specific Styles --- */
+.about-faq li {
+    margin-bottom: 8px;
+    color: #6d4c41;
+}
+
+/* Retro Contact Form Styles */
+.retro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #6d4c41;
+}
+
+.retro-form input[type="text"],
+.retro-form input[type="email"],
+.retro-form textarea {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #a3c9a8;
+    background-color: #fafafa;
+    color: #4a3b32;
+    outline: none;
+}
+
+.retro-form input:focus,
+.retro-form textarea:focus {
+    background-color: #ffffff;
+    border-color: #ffb7b2; /* Highlights pink when clicked */
+}
+
+/* Classic Form Action Button */
+.submit-btn {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e2f4d9;
+    border: 1px solid #a3c9a8;
+    padding: 8px;
+    cursor: pointer;
+    color: #6d4c41;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #ffdef2;
+    border-color: #ffb7b2;
+}
+
+/* Sidebar Social Link Badges */
+.social-badge {
+    display: block;
+    border: 1px dashed #a3c9a8;
+    padding: 6px;
+    font-size: 12px;
+    color: #6d4c41;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.social-badge:hover {
+    background-color: #ffdef2;
+    border-style: solid;
+    border-color: #ffb7b2;
+}
+
+.hits {
+  width: auto
+  height: 25px
+}
+
+/* --- 4-Column Book Shelf Page Styles --- */
+.book-shelf-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Divides into exactly 4 columns */
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.shelf-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Force inner shelf container boxes to scroll or grow naturally */
+.shelf-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 8px;
+    min-height: 400px;
+}
+
+/* Custom Header Color Varieties */
+.col-hdr-pink { background-color: #ffdef2 !important; border-color: #ffb7b2 !important; }
+.col-hdr-green { background-color: #e2f4d9 !important; border-color: #a3c9a8 !important; }
+.col-hdr-gray { background-color: #eee; border-color: #ccc !important; }
+
+/* Individual Book Presentation Styling */
+.book-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border: 1px dashed #a3c9a8;
+    padding: 8px 4px;
+}
+
+/* Book Cover Framework Box */
+.book-cover {
+    background-color: #ffffff;
+    border: 1px solid #a3c9a8;
+    padding: 4px;
+    display: inline-block;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.02);
+    margin-bottom: 6px;
+}
+
+.book-cover img {
+    width: 85px;
+    height: 125px;
+    object-fit: cover; 
+    display: block;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.book-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #4a3b32;
+    line-height: 1.2;
+}
+
+.book-author {
+    font-size: 10px;
+    color: #8c7365;
+}
+
+.book-progress, .book-reason, .book-rating-label {
+    font-size: 9px;
+    margin-top: 3px;
+    font-style: italic;
+}
+
+.book-progress { color: #b58392; }
+.book-reason { color: #888; }
+
+.star-rating {
+    font-size: 11px;
+    color: #ffb7b2;
+    margin-top: 2px;
+    letter-spacing: 1px;
+}
+
+.dnf-fade {
+    opacity: 0.75;
+    border-color: #ccc;
+}
+.dnf-fade .book-cover {
+    border-color: #ccc;
+}
+
+/* --- Pet Gallery Page Styles --- */
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    align-items: stretch;
+}
+
+.pet-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.pet-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Clickable Pet Cover Styling */
+.pet-image-link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.pet-cover {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #a3c9a8;
+    padding: 4px;
+    display: inline-block;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.pet-cover img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+/* Hover overlay prompt on the photo */
+.hover-overlay {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background: rgba(255, 222, 242, 0.9);
+    border: 1px dashed #ffb7b2;
+    color: #4a3b32;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.pet-image-link:hover .hover-overlay {
+    opacity: 1;
+}
+
+.pet-image-link:hover img {
+    transform: scale(1.03);
+}
+
+/* Pet Details Text */
+.pet-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.pet-name-link {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4a3b32;
+    text-decoration: none;
+}
+
+.pet-name-link:hover {
+    color: #ffb7b2;
+    text-decoration: underline;
+}
+
+.pet-subtitle {
+    font-size: 10px;
+    color: #8c7365;
+    font-style: italic;
+}
+
+.pet-quick-info {
+    list-style-type: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+    font-size: 11px;
+    color: #6d4c41;
+    text-align: left;
+    background: #fafafa;
+    border: 1px dashed #a3c9a8;
+    padding: 6px 8px;
+}
+
+/* Extra Header Variant Color */
+.col-hdr-yellow { background-color: #fffdec !important; border-color: #e2d893 !important; }
