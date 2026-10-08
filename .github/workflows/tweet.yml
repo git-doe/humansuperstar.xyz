@@ -1,0 +1,12 @@
+name: Tweet Release or Commit
+
+on:
+  push:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+jobs:
+  call-twitter-bot:
+    uses: git-doe/commiter/.github/workflows/tweet-commit.yml@main
+    secrets: inherit # Automatically passes secrets to the shared workflow
